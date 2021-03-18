@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>MowLi 微風 - 技術學習部落格</title>
+</head>
+
+<body>
+  <!-- 套用 nav 主題色之後可客製配色，後面加上 style -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #303231">
+    <a class="navbar-brand" href="#">MowLi 微風</a>
+    <!-- 當尺寸變小，就會顯示 Menu，為使用 data-toggle 與 data-target 操作  -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <!-- container 最大寬度 1140 px -->
+  <!-- breadcrumb 本身有 padding，可以用 utilities 調整空間 -->
+  <div class="container">
+    <ol class="breadcrumb pl-0">
+      <li class="breadcrumb-item "><a href="#" class="text-blog">首頁</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-blog">文章</a></li>
+      <li class="breadcrumb-item active" aria-current="page">書籍心得</li>
+    </ol>
+    <h1 class="text-blog">第一章 無瑕的程式碼 — 閱讀筆記</h1>
+    <!-- <code> 標籤為程式碼的標籤 -->
+    <div class="row">
+      <!-- left-sidebar -->
+      <div class="col-md-8">
+        <div class="my-2">
+          <small>
+            <span class="mr-3"><i class="fas fa-at mr-1"></i>MowLi 微風</span>
+            <span class="mr-3">2020/11/08</span>
+            <span>必備知識</span>
+          </small>
+        </div>
+        <article>
+          <!-- img-fluid，圖片才不會超過 100 %（也就是 col-md-8） -->
+          <img class="img-fluid mb-3" style="width: 98%"
+            src="https://miro.medium.com/max/1400/1*AegHMGVrh-LrWGbZDYBnJg.jpeg">
+          <p>作者首先提到程式碼是一種用來被明確說明需求的文字，擁有「描述細節的精確性」，這種性質使得程式碼永遠無法被一些方便的軟體套裝工具取代。
+            而撰寫「好」的程式碼是非常花時間的，理論上閱讀舊的程式碼的時間比真正撰寫程式碼的時間多出 10 倍，因為你必須非常清楚舊有架構才能使他易讀，並進行重構。
+            但是撰寫「不好」的程式碼是更花時間的（後面 Debug 的時間跟講 WTF 的時間），造成產能下降，書中甚至提到劣質的程式碼讓一間公司倒閉的案例。</p>
+          <h2 class="text-secondary my-4">既然不好，為什麼大家都還要寫劣質的程式碼？</h2>
+          <ul class="ml-5">
+            <li>上層在催你，你有時間壓力</li>
+            <li>你可能厭倦寫這份程式碼，不想重構它，想要跑得過就好</li>
+            <li>你不懂得什麼是好的程式碼，以及該如何撰寫它（我）</li>
+          </ul>
+          <p>但前面及此處強調的觀念是：製造爛的程式並不會讓你趕上 Deadline，反而會讓你後面開發速度變慢而錯過 Deadline。</p>
+
+          <h2 class="text-secondary my-4">那 Clean Code 是什麼？</h2>
+          <p>每個人對於 Clean Code 的定義有所不同，於是作者訪問了許多資深程式設計師的看法，以下為我自己節錄書中一些能被「具體」描述的重點（其它部分是偏向抽象的感覺）：</p>
+          <ul class="ml-5">
+            <li>只專注做好一件事，每個函式、類別、模組等只表達單一的意圖</li>
+            <li>說明事實，不該使人胡亂猜測設計者的意思</li>
+            <li>沒有重複的程式碼</li>
+            <li>使用有意義的名稱</li>
+            <li>能夠通過所有測試</li>
+            <li>可以被作者以外的人閱讀跟增強</li>
+          </ul>
+          <p>而本書作者認為：「減少重複、具有高度的表達力，並且及早建立簡單抽象概念」即為 Clean Code。</p>
+
+          <h2 class="text-secondary my-4">總結</h2>
+          <p>這一章節主要講解了撰寫劣質的程式碼會有什麼後果，以及帶出什麼是 Clean Code，為本書後面的章節所要介紹的原則作一個鋪陳。</p>
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>用心保護程式碼，是程式設計師的工作</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Robert C. Martin</figcaption>
+          </figure>
+          <p>我印象較深刻的是作者提及的態度，身為程式設計師，如何維護一個好的程式碼就是我們的職責。其實也正好呼應 Michael Feathers 的看法：「Clean Code 一定是由某位重視且照料它的人所撰寫的」。</p>
+        </article>
+
+        <!-- 留言板 -->
+        <hr>
+        <div class="card border-light mt-4">
+          <div class="card-header">
+            留言回覆
+          </div>
+          <div class="media mb-4 mt-2">
+            <img src="https://randomuser.me/api/portraits/women/20.jpg" width="64" height="64" class="mr-3" alt="...">
+            <div class="media-body">
+              <h6 class="mt-0">呂葳葳</h5>
+                <div class="form-group">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, repellendus.</p>
+                  <button class="btn btn-light btn-block mt-2">回覆</button>
+                </div>
+            </div>
+          </div>
+          <div class="media mb-4 mt-2">
+            <img src="https://randomuser.me/api/portraits/women/56.jpg" width="64" height="64" class="mr-3" alt="...">
+            <div class="media-body">
+              <h6 class="mt-0">曾聖牙</h5>
+                <div class="form-group">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, repellendus.</p>
+                  <button class="btn btn-light btn-block mt-2">回覆</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right-sidebar -->
+      <div class="col-md-4">
+        <h2 class="text-secondary">Tags</h2>
+        <a href="#" class="badge badge-info"><i class="fas fa-tags"></i>CleanCode</a>
+        <a href="#" class="badge badge-info"><i class="fas fa-tags"></i>敏捷式開發</a>
+        <a href="#" class="badge badge-info"><i class="fas fa-tags"></i>閱讀心得</a>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-light py-5 mt-3 ">
+    <div class="container d-flex justify-content-between">
+      @copyright 2020 HMF
+      <div>
+        <a href="#" class="text-blog"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-blog"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-blog"><i class="fab fa-instagram-square"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
