@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>購物網站 typography 練習</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          ASRV | FitnessWear
+        </a>
+        <div class="dropdown ml-auto">
+          <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+            <i class=" fa fa-shopping-cart text-dark " aria-hidden="true"></i>
+            <span class="badge badge-pill">9</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" data-offset="400">
+            <h6 class="ml-2">已選擇商品</h6>
+            <table class="table table-sm">
+              <tbody>
+                <tr>
+                    <td class="align-middle text-center">
+                      <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                        <i class=" " aria-hidden="true"></i>
+                      </a>
+                    </td>
+                    <td class="align-middle"><small>Essential Fleece Hoodie - Black</small></td>
+                    <td class="align-middle"><small>*1</small></td>
+                    <td class="align-middle text-right"><small>$1200</small></td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle text-center">
+                      <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                        <i class=" " aria-hidden="true"></i>
+                      </a>
+                    </td>
+                    <td class="align-middle"><small>Short Sleeve Sideline Jacket</small></td>
+                    <td class="align-middle"><small>*1</small></td>
+                    <td class="align-middle text-right"><small>$950</small></td>
+                  </tr>
+              </tbody>
+            </table>
+            <a href="checkout.html" class="btn btn-primary btn-block">
+                結帳去
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb  bg-transparent pl-0">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Jacket</li>
+            </ol>
+          </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sticky-top" style="top: 1.875rem">
+                    <h1 class="h5">Short Sleeve Sideline Jacket</h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <span class="text-muted"><del>原價 $1299</del></span>
+                        <div class="h3 ml-auto text-danger mb-0">
+                            <small>特價 $520</small>
+                        </div>
+                    </div>
+                    <hr> 尺寸：
+                    <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary mr-1">
+                          <input type="radio" name="size" id="size-sm" autocomplete="off"> S
+                        </label>
+                        <label class="btn btn-outline-secondary mr-1">
+                          <input type="radio" name="size" id="size-m" autocomplete="off"> M
+                        </label>
+                        <label class="btn btn-outline-secondary mr-1">
+                          <input type="radio" name="size" id="size-l" autocomplete="off"> L
+                        </label>
+                        <label class="btn btn-outline-secondary mr-1">
+                          <input type="radio" name="size" id="size-xl" autocomplete="off"> XL
+                        </label>
+                      </div>
+                    <div class="input-group mt-4">
+                        <select name="size" id="" class="form-control mr-1 ">
+                            <option value="1">1件</option>
+                            <option value="2">2件</option>
+                            <option value="3">3件</option>
+                        </select>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+				<h2>Feature</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum quaerat voluptatibus aperiam explicabo. Quae sequi totam dolorem in eum?</p>
+				<div class="right-main-items text-center">
+					<h3>Waterproof</h3>
+					<img class="img-cover" src="https://cdn.shopify.com/s/files/1/0297/6293/products/5_600x.jpg?v=1605048605">
+					<h3>10 inch zipper side splits</h3>
+					<img class="img-cover" src="https://cdn.shopify.com/s/files/1/0297/6293/products/8_600x.jpg?v=1605048605">
+					<h3>Two welted front pockets</h3>
+					<img class="img-cover" src="https://cdn.shopify.com/s/files/1/0297/6293/products/6_600x.jpg?v=1605048605">
+				</div>
+				<div class="bg-gray my-5 p-3">
+					<h3>購物說明</h3>
+					<p>Waterproof short-sleeve jacket constructed from TETRA® performance technology [ Waterproof. 4-Way Stretch. Sweat-Wicking. Antibacterial. ] Designed with a quarter zip neck and 10-inch zippered side splits for layering. Featuring two welted front pockets with an internal elastic AirPod slot. Complete with under-arm breathability vents and reflective logo details.</p>
+				</div>
+            </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    </body>
+</html>

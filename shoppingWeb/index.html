@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>購物網站 typography 練習</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          ASRV | FitnessWear
+        </a>
+        <div class="dropdown ml-auto">
+          <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+            <i class=" fa fa-shopping-cart text-dark " aria-hidden="true"></i>
+            <span class="badge badge-pill">9</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" data-offset="400">
+            <h6 class="ml-2">已選擇商品</h6>
+            <table class="table table-sm">
+              <tbody>
+                <tr>
+                  <td class="align-middle text-center">
+                    <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                      <i class=" " aria-hidden="true"></i>
+                    </a>
+                  </td>
+                  <td class="align-middle"><small>Essential Fleece Hoodie - Black</small></td>
+                  <td class="align-middle"><small>*1</small></td>
+                  <td class="align-middle text-right"><small>$1200</small></td>
+                </tr>
+                <tr>
+                  <td class="align-middle text-center">
+                    <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                      <i class=" " aria-hidden="true"></i>
+                    </a>
+                  </td>
+                  <td class="align-middle"><small>Short Sleeve Sideline Jacket</small></td>
+                  <td class="align-middle"><small>*1</small></td>
+                  <td class="align-middle text-right"><small>$950</small></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="checkout.html" class="btn btn-primary btn-block">
+              結帳去
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-item-end">
+        <div class="container">
+          <div class="bg-lighter p-3">
+            <h1 class="display-3 text-center">期間限定，跳樓大拍賣</h1>
+            <p class="lead text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group sticky-top">
+              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#pane-1">外套與夾克</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-2">短袖與長袖</a>
+              <a class="list-group-item list-group-item-action">帽 Tee</a>
+              <a class="list-group-item list-group-item-action">背心</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane active" id="pane-1">
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 box-shadow">
+                      <a href="product-detail.html"><img src="https://cdn.shopify.com/s/files/1/0297/6293/products/5_600x.jpg?v=1605048605" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <h5 class="card-title h6">Short Sleeve Sideline Jacket</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 box-shadow">
+                      <a href="product-detail.html"><img src="https://cdn.shopify.com/s/files/1/0297/6293/products/FALLTETRA_ON-MODEL3608-Edit_400x.jpg?v=1605404486" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <h5 class="card-title h6">Essential Fleece Hoodie - Black</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 box-shadow">
+                      <a href="product-detail.html"><img src="https://cdn.shopify.com/s/files/1/0297/6293/products/spring20203252-Edit_400x.jpg?v=1586235509" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <h5 class="card-title h6">Garment-Dyed Patch Hoodie - Faded Grey</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 box-shadow">
+                      <a href="product-detail.html"><img src="https://cdn.shopify.com/s/files/1/0297/6293/products/Black_Rainplus_Hoodie_Side_400x.jpg?v=1569083210" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <h5 class="card-title h6">Essential Fleece Hoodie - Black</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="pane-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    </body>
+</html>
